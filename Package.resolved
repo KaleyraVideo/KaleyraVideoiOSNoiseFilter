@@ -1,0 +1,42 @@
+{
+  "originHash" : "053b1d9f41a61322413c8128f9a4ea2becb9c1fc3e35e097818fa3783d6d3882",
+  "pins" : [
+    {
+      "identity" : "ios-snapshot-test-case",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/uber/ios-snapshot-test-case",
+      "state" : {
+        "revision" : "7b10770333a961be6e5a41c9ce04b8c6d3990126",
+        "version" : "8.0.0"
+      }
+    },
+    {
+      "identity" : "iosdeepfilternet",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KaleyraVideo/iOSDeepFilterNet.git",
+      "state" : {
+        "revision" : "e009c407a5898770e6d68015d56a7c418e1ce261",
+        "version" : "0.0.39"
+      }
+    },
+    {
+      "identity" : "kaleyratestkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KaleyraVideo/KaleyraTestKit.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "740171714f40c7a242a5c64a92271a5dc3cccbad"
+      }
+    },
+    {
+      "identity" : "swifthamcrest",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nschum/SwiftHamcrest.git",
+      "state" : {
+        "revision" : "8c679c859fd5e12b83aea68a51045b0a11dfddef",
+        "version" : "2.2.4"
+      }
+    }
+  ],
+  "version" : 3
+}
