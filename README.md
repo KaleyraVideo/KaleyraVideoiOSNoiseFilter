@@ -1,4 +1,4 @@
-# KaleyraVideoSDKNoiseFilter
+# KaleyraVideoNoiseFilter
 A Swift Package that seamlessly adds noise filter functionality to the KaleyraVideoSDK for iOS.
 
 ## Features
