@@ -14,9 +14,11 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "KaleyraVideoNoiseFilter", dependencies: [
+            name: "KaleyraVideoNoiseFilter",
+            dependencies: [
                 .product(name: "DeepFilterNet", package: "iOSDeepFilterNet"),
             ],
+            path: "Core/KaleyraVideoNoiseFilter",
             resources: [
                 .process("Resources")
             ]),
@@ -28,6 +30,10 @@ let package = Package(
                 .product(name: "KaleyraTestKit", package: "KaleyraTestKit"),
                 .product(name: "KaleyraTestMatchers", package: "KaleyraTestKit"),
                 .product(name: "KaleyraTestHelpers", package: "KaleyraTestKit"),
+            ],
+            path: "Core/KaleyraVideoNoiseFilterTests",
+            resources: [
+                .process("TestResources")
             ]
         ),
     ]
