@@ -48,10 +48,6 @@ public class DeepFilter: NSObject {
         guard let modelData = try? Data(contentsOf: modelURL) else { return }
 
         setup(withModelData: modelData)
-
-        guard let state else { return }
-
-        self.supportedFrameLength = filter.getFrameLength(state: state).intVal
     }
 
     deinit {
@@ -87,6 +83,10 @@ public class DeepFilter: NSObject {
                                       channels: 1,
                                       attenLim: 33.0)
         }
+
+        guard let state else { return }
+
+        self.supportedFrameLength = filter.getFrameLength(state: state).intVal
     }
 
     // MARK: - Remove Noise

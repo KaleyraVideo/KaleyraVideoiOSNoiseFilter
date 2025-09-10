@@ -6,7 +6,7 @@
 [subrepo]
 	remote = git@github.com:KaleyraVideo/KaleyraVideoiOSNoiseFilterCore.git
 	branch = main
-	commit = fbb95256c3c56cccc77c08e5e81e231524a5f03d
-	parent = c573cb7a73ba258ad92f23d7fbef3ecdfdca9d62
+	commit = 26a140e24b4e604da1662c8e594cbe3f96ec1865
+	parent = 9528db144e8525c1d3de189afe6fd6ece26c99f0
 	method = merge
 	cmdver = 0.4.6

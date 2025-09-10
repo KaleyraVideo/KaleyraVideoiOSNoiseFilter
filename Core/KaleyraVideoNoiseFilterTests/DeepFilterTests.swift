@@ -104,6 +104,17 @@ final class DeepFilterTests: UnitTestCase {
         assertThat(deepFilterNetSpy.createStateInvocations, hasCount(1))
         assertThat(deepFilterNetSpy.createStateInvocations.first?.channels, presentAnd(equalTo(1)))
         assertThat(deepFilterNetSpy.createStateInvocations.first?.attenLim, presentAnd(equalTo(33.0)))
+        assertThat(sut.isConfigured, isTrue())
+    }
+
+    func testConfigureShouldSetSupportedFrameLengthUsingDeepFilterNet() {
+        let deepFilterNetSpy = makeDeepFilterNetSpy()
+        let sut = makeNotConfiguredSUT(filter: deepFilterNetSpy)
+
+        sut.configure(withModelData: Data.testModelData, error: nil)
+
+        assertThat(deepFilterNetSpy.getFrameLengthInvocations, equalTo([deepFilterNetSpy.mockedState]))
+        assertThat(sut.supportedFrameLength, equalTo(512))
     }
 
     func testDeinitShouldFreeState() {
