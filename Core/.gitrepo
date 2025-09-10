@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:KaleyraVideo/KaleyraVideoiOSNoiseFilterCore.git
+	branch = main
+	commit = fbb95256c3c56cccc77c08e5e81e231524a5f03d
+	parent = c573cb7a73ba258ad92f23d7fbef3ecdfdca9d62
+	method = merge
+	cmdver = 0.4.6
